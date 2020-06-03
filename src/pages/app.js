@@ -9,8 +9,8 @@ import PrivateRoute from "../components/privateRoute"
 const App = () => (
   <Layout>
     <Router>
-      <Profile path="/app/profile" />
-      <Login path="/app/login" />
+      {/* <Profile path="/app/profile" /> */}
+      {/* <Login path="/app/login" /> */}
     </Router>
   </Layout>
 )
