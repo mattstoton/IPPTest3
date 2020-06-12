@@ -1,9 +1,13 @@
 import React from 'react'
+import ReactDOM from 'react-dom';
+import App from './App';
+
 import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
-import { getUser, isLoggedIn } from '../services/auth'
+import { getUser, isLoggedIn, logout } from '../services/auth'
+
 
 import pic01 from '../assets/images/pic01.jpg'
 import pic02 from '../assets/images/pic02.jpg'
@@ -13,10 +17,13 @@ import pic05 from '../assets/images/pic05.jpg'
 import pic06 from '../assets/images/pic06.jpg'
 import pic11 from '../assets/images/pic11.jpg'
 
+
+
 class HomeIndex extends React.Component {
   render() {
     return (
       <Layout>
+        {/* <Status /> */}
         <Helmet
           title="Gatsby Starter - Forty"
           meta={[
@@ -71,7 +78,7 @@ class HomeIndex extends React.Component {
                             </header>
                             <Link to="/landing" className="link primary"></Link>
                         </article> */}
-            {/* <ul className="actions">
+            <ul className="actions">
               <h1>Hello {isLoggedIn() ? getUser().name : 'world'}!</h1>
               <p>
                 {isLoggedIn() ? (
@@ -91,7 +98,7 @@ class HomeIndex extends React.Component {
                   Get Started
                 </Link>
               </li>
-            </ul> */}
+            </ul>
           </section>
           <section id="two">
             <div className="inner">

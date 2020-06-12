@@ -4,16 +4,23 @@
   "version": "1.0.0",
   "author": "Hunter Chang",
   "dependencies": {
+    "firebase": "^7.15.0",
     "gatsby": "^2.19.5",
     "gatsby-cli": "^2.12.43",
+    "gatsby-plugin-create-client-paths": "^2.3.3",
+    "gatsby-plugin-firebase": "^0.2.0-beta.4",
     "gatsby-plugin-manifest": "^2.2.38",
+    "gatsby-plugin-netlify-identity": "^0.0.3",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sass": "^2.1.27",
+    "netlify-identity-widget": "^1.6.0",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-firebaseui": "^4.1.0",
+    "react-helmet": "^5.2.1",
+    "react-netlify-identity-widget": "^0.2.7"
   },
   "keywords": [
     "gatsby"
